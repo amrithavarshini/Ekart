@@ -92,7 +92,6 @@ public class EKartAwtUI {
 		productPanel.add(saveButton);
 
 		saveButton.addActionListener(new ActionListener() {
-			@Override
 			public void actionPerformed(ActionEvent e) {
 				saveItemToCart();
 			}

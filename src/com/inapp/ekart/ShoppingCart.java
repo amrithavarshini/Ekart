@@ -64,7 +64,7 @@ public class ShoppingCart {
 				}
 			}
 			if(itemCounter >= quantity){
-				ArrayList<ShoppingItem> tempList = new ArrayList<>();
+				ArrayList<ShoppingItem> tempList = new ArrayList<ShoppingItem>();
 				for (ShoppingItem shoppingItem : itemsInCart) {
 					if(shoppingItem.getId() == itemId && quantity > 0){
 						quantity -=1;
@@ -81,7 +81,7 @@ public class ShoppingCart {
 	
 	public boolean emptyCart(){
 		boolean isEmpty = false;
-		itemsInCart = new ArrayList<>();
+		itemsInCart = new ArrayList<ShoppingItem>();
 		isEmpty = true;
 		return isEmpty;
 	}
